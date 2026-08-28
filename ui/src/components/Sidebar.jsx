@@ -1,37 +1,9 @@
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import useFarmData from "../hooks/useFarmData.js";
 
 
 export default function Sidebar() {
-  const [farmName, setFarmName] = useState("");
   const { farm } = useFarmData();
-
-
-  useEffect(() => {
-    async function loadFarmInfo() {
-      try {
-        const response = await fetch("/api/planner");
-
-        if (!response.ok) {
-          throw new Error(
-            "Could not load farm information."
-          );
-        }
-
-        const data = await response.json();
-
-        setFarmName(
-          data.information[0]?.farmName ?? ""
-        );
-      } catch (error) {
-        console.error(error);
-      }
-    }
-
-    loadFarmInfo();
-  }, []);
-
 
   return (
     <aside className="sidebar">
@@ -98,12 +70,9 @@ export default function Sidebar() {
         <div className="farm-avatar">
           RF 
         </div>
-<span className="farm-name">{farm?.information[0].farmName}</span>
-        <div>
-          <strong>
-            {farmName}
-          </strong>
-        </div>
+<span className="farm-name">
+  {farm?.information?.[0]?.farmName}
+</span>
       </div>
     </aside>
   );
