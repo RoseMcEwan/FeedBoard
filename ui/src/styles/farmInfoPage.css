@@ -1,0 +1,63 @@
+/* Farm sections */
+
+.farm-section {
+  margin-top: var(--space-lg);
+}
+
+/* Farm cards */
+
+.farm-card {
+  padding: var(--space-lg);
+}
+
+.farm-card h3 {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-lg);
+}
+
+/* Farm grids */
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.farm-info-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.farm-location-row {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.pasture-data-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.farm-herd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Herd data */
+
+
+.herd-data-card h3 {
+  color: var(--primary-dark);
+}
+
+/* Paddocks */
+
+.paddock-table th, 
+.paddock-table td {
+  padding: var(--space-sm);
+}
+.paddock-table th {
+  background: var(--secondary-colour);
+}
