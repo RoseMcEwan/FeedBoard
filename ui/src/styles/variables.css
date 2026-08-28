@@ -1,0 +1,59 @@
+:root {
+  /* Colours */
+  --primary-colour: #2f6f3e;
+  --primary-dark: #184d31;
+  --primary-light: #e7eddb;
+  --secondary-colour: #eef4e6;
+
+  --blue-colour: #3c80bf;
+  --blue-dark: #326b9e;
+  --blue-light: #e5eff9;
+
+  --background-colour: #faf8f1;
+  --surface-colour: #ffffff;
+  --surface-soft: rgba(250, 248, 241, 0.92);
+  --surface-transparent: rgba(255, 255, 255, 0.8);
+
+  --text-colour: #425046;
+  --muted-text: #69766f;
+  --border-colour: #e8e4d8;
+  --danger-colour: #9a3131;
+  --focus-colour: rgba(47, 111, 62, 0.22);
+  --overlay-colour: rgba(20, 42, 30, 0.34);
+
+  /* Spacing */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 0.75rem;  /* 12px */
+  --space-md: 1rem;     /* 16px */
+  --space-lg: 1.5rem;   /* 24px */
+  --space-xl: 2rem;     /* 32px */
+
+  /* Typography */
+  --font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-heavy: 800;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-md: 0.9375rem;  /* 15px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.375rem;   /* 22px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-title: 2.25rem; /* 36px */
+
+  /* Radii */
+  --radius-control: 0.5rem; /* 8px */
+  --radius-card: 0.75rem;   /* 12px */
+  --radius-pill: 999px;
+
+  /* Controls */
+  --control-height: 2.6875rem;    /* 43px */
+  --control-height-small: 2.5rem; /* 40px */
+  --control-padding-inline: var(--space-sm);
+
+  /* Shadows */
+  --shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
+  --large-shadow: rgba(0, 0, 0, 0.12) 0 12px 30px;
+}
