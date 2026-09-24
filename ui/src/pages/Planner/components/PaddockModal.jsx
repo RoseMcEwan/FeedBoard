@@ -44,20 +44,6 @@ export default function PaddockModal({
       return;
     }
 
-    setSelectedOrder([
-      currentOrder[0] ?? "",
-      currentOrder[1] ?? "",
-      currentOrder[2] ?? "",
-      currentOrder[3] ?? "",
-      currentOrder[4] ?? ""
-    ]);
-  }, [isOpen, currentOrder]);
-
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-
     const previousFocus = document.activeElement;
 
     function handleKeyDown(event) {

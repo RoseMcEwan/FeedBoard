@@ -32,7 +32,7 @@ subtitle="Plan your grazing breaks"
         </button>
 
         <button
-          type="button button--square"
+          type="button"
           className="button button--square"
           onClick={onNextDay}
         >

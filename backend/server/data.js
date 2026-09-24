@@ -16,7 +16,7 @@ const herds = [
     id: "herd-2",
     name: "Herd 2",
     animals: 600,
-    stockClass: "Mixed age",
+    stockClass: "MA",
     colour: "blue",
     totalArea: 140,
     targetKgDMDay: 18

@@ -1,4 +1,4 @@
-export default function FeedCalculation ({ label, value, unit = "KgMD/cow" }) {
+export default function FeedCalculation ({ label, value, unit = "KgDM/cow" }) {
     return (
         <div className="feed-metric">
             <span>{label}</span>
